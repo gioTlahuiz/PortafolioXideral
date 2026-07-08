@@ -2,459 +2,728 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portafolio Academia Xideral</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Portafolio Academia Xideral</title>
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
-        rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Poppins',sans-serif;
-        }
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-        body{
 
-            background:
-            radial-gradient(circle at top left,#4F46E5 0%,transparent 30%),
-            radial-gradient(circle at bottom right,#06B6D4 0%,transparent 35%),
-            #080B1A;
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+rel="stylesheet">
 
-            color:white;
-            overflow-x:hidden;
-            min-height:100vh;
 
-        }
+<style>
 
-        /* Fondo animado */
 
-        body::before{
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-            content:"";
 
-            position:fixed;
+body{
 
-            width:200%;
-            height:200%;
+background:
+radial-gradient(circle at top left,#4F46E5 0%,transparent 30%),
+radial-gradient(circle at bottom right,#06B6D4 0%,transparent 35%),
+#080B1A;
 
-            background:
-            repeating-radial-gradient(circle,
-            rgba(255,255,255,.04) 0px,
-            rgba(255,255,255,.04) 2px,
-            transparent 3px,
-            transparent 90px);
+color:white;
+overflow-x:hidden;
+min-height:100vh;
 
-            animation:mover 40s linear infinite;
+}
 
-            z-index:-1;
 
-        }
 
-        @keyframes mover{
+body::before{
 
-            from{
-                transform:translate(0,0);
-            }
+content:"";
 
-            to{
-                transform:translate(-200px,-200px);
-            }
+position:fixed;
 
-        }
+width:200%;
+height:200%;
 
-        header{
+background:
+repeating-radial-gradient(circle,
+rgba(255,255,255,.04) 0px,
+rgba(255,255,255,.04) 2px,
+transparent 3px,
+transparent 90px);
 
-            min-height:70vh;
+animation:mover 40s linear infinite;
 
-            display:flex;
+z-index:-1;
 
-            justify-content:center;
+}
 
-            align-items:center;
 
-            text-align:center;
+@keyframes mover{
 
-            padding:30px;
+from{
+transform:translate(0,0);
+}
 
-        }
+to{
+transform:translate(-200px,-200px);
+}
 
-        h1{
+}
 
-            font-size:4rem;
-            font-weight:700;
 
-            background:linear-gradient(90deg,#fff,#56CCF2);
 
-            -webkit-background-clip:text;
-            -webkit-text-fill-color:transparent;
+header{
 
-            animation:fadeDown 1s;
+min-height:70vh;
 
-        }
+display:flex;
 
-        h2{
+justify-content:center;
 
-            color:#A5F3FC;
-            margin-top:20px;
+align-items:center;
 
-            animation:fadeUp 1.5s;
+text-align:center;
 
-        }
+padding:30px;
 
-        .descripcion{
+}
 
-            color:#ddd;
-            max-width:700px;
-            margin:auto;
-            margin-top:25px;
-            line-height:1.8;
-        }
 
-        .titulo{
 
-            text-align:center;
-            margin-bottom:60px;
-            font-size:2.5rem;
-        }
+h1{
 
-        .card{
+font-size:4rem;
+font-weight:700;
 
-            background:rgba(255,255,255,.08);
+background:linear-gradient(90deg,#fff,#56CCF2);
 
-            backdrop-filter:blur(12px);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 
-            border:1px solid rgba(255,255,255,.15);
+}
 
-            border-radius:25px;
 
-            color:white;
 
-            overflow:hidden;
+h2{
 
-            transition:.45s;
+color:#A5F3FC;
 
-            animation:aparecer .8s ease;
+}
 
-        }
 
-        .card:hover{
 
-            transform:translateY(-15px) scale(1.03);
+.descripcion{
 
-            box-shadow:
-            0 20px 45px rgba(0,255,255,.25);
+color:#ddd;
+max-width:700px;
+margin:auto;
+margin-top:25px;
+line-height:1.8;
 
-            border:1px solid #00E5FF;
+}
 
-        }
 
-        .card img{
 
-            height:220px;
+.titulo{
 
-            object-fit:cover;
+text-align:center;
 
-            transition:.5s;
+margin-bottom:60px;
 
-        }
+font-size:2.5rem;
 
-        .card:hover img{
+}
 
-            transform:scale(1.08);
 
-        }
 
-        .badge{
+.card{
 
-            margin-right:5px;
-            margin-top:8px;
+background:rgba(255,255,255,.08);
 
-        }
+backdrop-filter:blur(12px);
 
-        .btn-custom{
+border:1px solid rgba(255,255,255,.15);
 
-            width:100%;
+border-radius:25px;
 
-            border-radius:50px;
+color:white;
 
-            background:linear-gradient(90deg,#00E5FF,#4F46E5);
+overflow:hidden;
 
-            color:white;
+transition:.45s;
 
-            border:none;
+}
 
-            transition:.3s;
 
-        }
 
-        .btn-custom:hover{
+.card:hover{
 
-            transform:scale(1.05);
+transform:translateY(-15px) scale(1.03);
 
-        }
+box-shadow:
+0 20px 45px rgba(0,255,255,.25);
 
-        footer{
+border:1px solid #00E5FF;
 
-            margin-top:80px;
-            padding:30px;
-            text-align:center;
+}
 
-            color:#bbb;
 
-        }
 
-        @keyframes fadeDown{
+.card img{
 
-            from{
+height:220px;
 
-                opacity:0;
-                transform:translateY(-50px);
+object-fit:cover;
 
-            }
+}
 
-            to{
 
-                opacity:1;
-                transform:translateY(0);
 
-            }
+.badge{
 
-        }
+margin-right:5px;
+margin-top:8px;
 
-        @keyframes fadeUp{
+}
 
-            from{
 
-                opacity:0;
-                transform:translateY(60px);
 
-            }
+.btn-custom{
 
-            to{
+width:100%;
 
-                opacity:1;
-                transform:translateY(0);
+border-radius:50px;
 
-            }
+background:linear-gradient(90deg,#00E5FF,#4F46E5);
 
-        }
+color:white;
 
-        @keyframes aparecer{
+border:none;
 
-            from{
+}
 
-                opacity:0;
-                transform:translateY(70px);
 
-            }
 
-            to{
+.btn-custom:hover{
 
-                opacity:1;
-                transform:translateY(0);
+transform:scale(1.05);
 
-            }
+}
 
-        }
 
-        .card:nth-child(1){
+/* ========================= */
+/* CERTIFICACIONES */
+/* ========================= */
 
-            animation-delay:.2s;
 
-        }
+.certificacion-card{
 
-        .card:nth-child(2){
+background:rgba(255,255,255,.08);
 
-            animation-delay:.4s;
+backdrop-filter:blur(12px);
 
-        }
+border:1px solid rgba(255,255,255,.15);
 
-        .card:nth-child(3){
+border-radius:25px;
 
-            animation-delay:.6s;
+padding:30px;
 
-        }
+text-align:center;
 
-    </style>
+transition:.4s;
+
+height:100%;
+
+}
+
+
+.certificacion-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:
+0 20px 45px rgba(0,255,255,.25);
+
+border:1px solid #00E5FF;
+
+}
+
+
+
+.icono-certificacion{
+
+font-size:70px;
+
+color:#00E5FF;
+
+margin-bottom:20px;
+
+}
+
+
+
+.btn-pdf{
+
+display:block;
+
+width:100%;
+
+padding:12px;
+
+border-radius:50px;
+
+background:linear-gradient(90deg,#FF416C,#FF4B2B);
+
+color:white;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+
+
+.btn-pdf:hover{
+
+transform:scale(1.05);
+
+color:white;
+
+}
+
+
+
+footer{
+
+margin-top:80px;
+
+padding:30px;
+
+text-align:center;
+
+color:#bbb;
+
+}
+
+
+
+</style>
 
 </head>
 
+
 <body>
+
+
 
 <header>
 
 <div>
 
-<h1>Portafolio Academia Xideral</h1>
 
-<h2>Giovanni Tlahuiz</h2>
+<h1>
+Portafolio Academia Xideral
+</h1>
+
+
+<h2>
+Giovanni Tlahuiz
+</h2>
+
 
 <p class="descripcion">
 
 Bienvenido a mi portafolio de proyectos desarrollados durante la Academia Xideral.
-Aquí encontrarás ejercicios, retos técnicos asi como el proyecto desarrollado en Data.
+Aquí encontrarás ejercicios, retos técnicos y proyectos enfocados en desarrollo
+Full Stack, Data y Cloud.
 
 </p>
+
 
 </div>
 
 </header>
 
+
+
+
 <div class="container">
+
 
 <h2 class="titulo">
 Mis Proyectos
 </h2>
 
+
+
 <div class="row g-4">
+
+
 
 <div class="col-md-6 col-lg-4">
 
+
 <div class="card h-100">
+
 
 <img src="https://picsum.photos/500/300?random=1">
 
+
 <div class="card-body">
 
-<h4>Desafio 1</h4>
+
+<h4>
+Desafio 1
+</h4>
+
 
 <p>
-
-Clasificar ventas como altas o bajas segun las reglas
--Si la venta es mayor o igual a 200 alta.
--En otro caso es baja
-
+Clasificación de ventas usando reglas de negocio mediante Python.
 </p>
 
-<span class="badge bg-primary">Python 3</span>
-<span class="badge bg-success">Jupyter Notebook</span>
+
+<span class="badge bg-primary">
+Python
+</span>
+
+
+<span class="badge bg-success">
+Jupyter
+</span>
+
 
 </div>
+
 
 <div class="card-footer bg-transparent border-0">
 
-<a href="https://giotlahuiz.github.io/PortafolioXideral/Untitled.html"
-   class="btn btn-custom"
-   target="_blank"
-   rel="noopener noreferrer">
 
-    Ver Proyecto
-    <i class="bi bi-arrow-right-circle"></i>
+<a href="https://giotlahuiz.github.io/PortafolioXideral/Untitled.html"
+class="btn btn-custom"
+target="_blank">
+
+Ver Proyecto
+
+<i class="bi bi-arrow-right-circle"></i>
 
 </a>
 
+
 </div>
+
 
 </div>
 
 </div>
+
+
+
+
 
 <div class="col-md-6 col-lg-4">
 
+
 <div class="card h-100">
+
 
 <img src="https://picsum.photos/500/300?random=2">
 
+
 <div class="card-body">
 
-<h4>Desafio 2</h4>
+
+<h4>
+Desafio 2
+</h4>
+
 
 <p>
-
-Manipulacion de un dataframe y consultas basicas de informacion mediante codigo en Python.
-
+Manipulación de datos utilizando Python, Numpy y Pandas.
 </p>
 
-<span class="badge bg-success">Python</span>
-<span class="badge bg-warning text-dark">Numpy</span>
-<span class="badge bg-warning text-dark">Dataframe</span>
-<span class="badge bg-warning text-dark">CSV</span>
+
+<span class="badge bg-success">
+Python
+</span>
+
+
+<span class="badge bg-warning text-dark">
+Pandas
+</span>
+
+
 
 </div>
+
 
 <div class="card-footer bg-transparent border-0">
 
-<a href="https://giotlahuiz.github.io/PortafolioXideral/fundamentos_csv_pandas_numpy.html"
-   class="btn btn-custom"
-   target="_blank"
-   rel="noopener noreferrer">
 
-    Ver Proyecto
-    <i class="bi bi-arrow-right-circle"></i>
+<a href="https://giotlahuiz.github.io/PortafolioXideral/fundamentos_csv_pandas_numpy.html"
+class="btn btn-custom"
+target="_blank">
+
+Ver Proyecto
 
 </a>
 
+
 </div>
+
 
 </div>
 
 </div>
+
+
+
+
 
 <div class="col-md-6 col-lg-4">
 
+
 <div class="card h-100">
 
-<img src="https://picsum.photos/500/300?random=3">
+
+<img src="img_netflix/Captura de pantalla 1.png">
+
 
 <div class="card-body">
 
-<h4>Análisis del dataset Netflix</h4>
+
+<h4>
+Análisis Dataset Netflix
+</h4>
+
 
 <p>
-
-Sitio web responsivo del analisis realizado sobre la base de datos de Netflix.
-
+Dashboard interactivo desarrollado con Python y Streamlit.
 </p>
 
-<span class="badge bg-danger">Python</span>
-<span class="badge bg-info">JupyterNotebook</span>
-<span class="badge bg-info">Streamlit</span>
-<span class="badge bg-info">Pandas</span>
-<span class="badge bg-info">Seaborn</span>
+
+<span class="badge bg-danger">
+Python
+</span>
+
+
+<span class="badge bg-info">
+Streamlit
+</span>
+
+
+<span class="badge bg-info">
+Pandas
+</span>
+
 
 </div>
+
 
 <div class="card-footer bg-transparent border-0">
 
-<a href="http://13.52.215.78:8501/#hola-mundo"
-   class="btn btn-custom"
-   target="_blank"
-   rel="noopener noreferrer">
 
-    Ver Proyecto
-    <i class="bi bi-arrow-right-circle"></i>
+<a href="http://13.52.215.78:8501/"
+class="btn btn-custom"
+target="_blank">
+
+Ver Proyecto
 
 </a>
 
+
 </div>
+
+
+</div>
+
+
+</div>
+
 
 </div>
 
 </div>
 
-</div>
+
+
+
+
+<!-- ========================= -->
+<!-- CERTIFICACIONES -->
+<!-- ========================= -->
+
+
+<div class="container mt-5">
+
+
+<h2 class="titulo">
+
+Mis Certificaciones
+
+</h2>
+
+
+
+<div class="row g-4">
+
+
+
+<div class="col-md-6 col-lg-4">
+
+
+<div class="certificacion-card">
+
+
+<i class="bi bi-cloud-fill icono-certificacion"></i>
+
+
+<h4>
+AWS Well Architected Framework
+</h4>
+
+
+<p>
+
+Certificado del curso Serverless Mindset por AWS.
+
+</p>
+
+
+<a href="certificados/Serveless_Mindset_Certificado.pdf"
+target="_blank"
+class="btn-pdf">
+
+
+<i class="bi bi-file-earmark-pdf"></i>
+
+Ver Certificado
+
+
+</a>
+
 
 </div>
+
+
+</div>
+
+
+
+
+
+<div class="col-md-6 col-lg-4">
+
+
+<div class="certificacion-card">
+
+
+<i class="bi bi-code-square icono-certificacion"></i>
+
+
+<h4>
+Darta Engineering on AWS
+</h4>
+
+
+<p>
+
+Certificado del curso Data Engineering on AWS.
+
+</p>
+
+
+<a href="certificados/Data_Engineering_on_AWS_Certificado.pdf"
+target="_blank"
+class="btn-pdf">
+
+
+<i class="bi bi-file-earmark-pdf"></i>
+
+Ver Certificado
+
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="col-md-6 col-lg-4">
+
+
+<div class="certificacion-card">
+
+
+<i class="bi bi-award-fill icono-certificacion"></i>
+
+
+<h4>
+AWS Well Architected Framework
+</h4>
+
+
+<p>
+
+Certificado del curso Well Architected Framework por AWS.
+
+</p>
+
+
+<a href="certificados/AWS_WELL_ARCHITECTED_Certificado.pdf"
+target="_blank"
+class="btn-pdf">
+
+
+<i class="bi bi-file-earmark-pdf"></i>
+
+Ver Certificado
+
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
 
 <footer>
 
 © 2026 Giovanni Tlahuiz | Academia Xideral
 
 </footer>
+
+
 
 </body>
 
